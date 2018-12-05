@@ -1,0 +1,78 @@
+.wp-block-file__button,
+.wp-block-button__link,
+.btn {
+  @extend %btn-base;
+  padding: 14px 24px;
+  color: $color-white;
+  font-family: $font-family-primary;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 2px;
+  background-color: $color-primary-state;
+  border: 1px solid $color-primary-state;
+  border-radius: 23px;
+
+  &:enter,
+  &:active {
+    background-color: lighten($color-primary-state, 5%);
+  }
+}
+
+.btn.has-icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px;
+}
+
+.btn.has-icon span[class*="icon-"] {
+  &:first-child {
+    margin-right: 8px;
+  }
+
+  &:last-child {
+    margin-left: 8px;
+  }
+
+  .rtl & {
+    &:first-child {
+      margin-left: 8px;
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 8px;
+      margin-left: 0;
+    }
+  }
+}
+
+.btn--download {
+  display: inline-flex;
+  align-items: baseline;
+
+  .article-content & {
+    margin-top: 24px;
+  }
+}
+
+.btn--download::before {
+  @include icon_svg(20px, 20px, "white", "arrow-ios-downward-outline");
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 20px;
+  transform: translateY(4px);
+
+  .rtl & {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+
+.btn--download:enter::before {
+  @include icon_svg(20px, 20px, "black", "arrow-ios-downward-outline");
+}
+
+

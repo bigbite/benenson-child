@@ -1,0 +1,16 @@
+// Light
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.eot?#iefix");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("eot"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.svg") format("svg");
+  font-weight: 300;
+}
+
+// Light Italic
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/OpenSans-Bold.eot?#iefix");
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("eot"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
