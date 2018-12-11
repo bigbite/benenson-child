@@ -10,14 +10,14 @@ if ( ! function_exists( 'benenson_child_create_post_type' ) ) {
 	function benenson_child_create_post_type() {
 		register_post_type( 'case_study',
 			array(
-				'labels' => array(
-					'name' => __( 'Case Studies' ),
+				'labels'      => array(
+					'name'          => __( 'Case Studies' ),
 					'singular_name' => __( 'Case Study' ),
 				),
-				'public' => true,
+				'public'      => true,
 				'has_archive' => true,
 				'taxonomies'  => array( 'category' ),
-				'supports' => [
+				'supports'    => [
 					'title',
 					'editor',
 					'author',
