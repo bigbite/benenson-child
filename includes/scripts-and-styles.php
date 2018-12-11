@@ -9,10 +9,7 @@
 if ( ! function_exists( 'benenson_child_dequeue_styles' ) ) {
 	function benenson_child_dequeue_styles() {
 		wp_dequeue_style( 'global-styles' );
-		wp_deregister_style( 'global-styles' );
-
 		wp_dequeue_style( 'print-styles' );
-		wp_deregister_style( 'print-styles' );
 	}
 }
 
@@ -32,5 +29,3 @@ if ( ! function_exists( 'benenson_child_enqueue_scripts' ) ) {
 }
 
 add_action( 'wp_enqueue_scripts', 'benenson_child_enqueue_scripts', 20 );
-
-
